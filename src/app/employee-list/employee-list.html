@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <h2> </h2>
+
+    <table>
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Salario</th>
+                <th>edad</th>
+                <th>Salario Anual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td>{{ emp.id }}</td>
+                <td>{{ emp.employee_name }}</td>
+                <td>{{ emp.employee_salary }}</td>
+                <td>{{ emp.employee_age }}</td>
+                <td>{{ emp.employeeAnnualSalary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
