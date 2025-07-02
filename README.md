@@ -32,7 +32,8 @@ This project is a web-based application that displays employee information retri
 
 1. **Clone the repository**
    ```bash
-   git clone -b master https://github.com/your-username/employee-viewer-app.git
-   cd employee-viewer-app
-
-> Optionally, you can adapt this app to use ReactJS, VueJS, or JQuery depending on your tech preference.
+   
+   git clone -b master https://github.com/MichaelSmm98/JavaThalesFront.git
+   git pull
+   git checkout master
+   cd JavaThalesFront
