@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EmployeeById } from './employee-by-id/employee-by-id';
-import { EmployeeList } from './employee-list/employee-list';
+import { EmployeeById } from './employees/employee-by-id/employee-by-id';
+import { EmployeeList } from './employees/employee-list/employee-list';
 import { RouterModule, Routes } from '@angular/router';
 
 

@@ -1,0 +1,31 @@
+<ng-container *ngIf="employee">
+    <mat-card class="mat-elevation-z4 m-4 p-4">
+
+        <!-- Título del empleado -->
+        <mat-card-title class="text-primary">
+            {{ employee.employee_name }}
+        </mat-card-title>
+
+        <mat-divider></mat-divider>
+
+        <!-- Detalles -->
+        <mat-list class="my-3">
+            <mat-list-item>
+                <strong>Edad:</strong> {{ employee.employee_age }}
+            </mat-list-item>
+            <mat-list-item>
+                <strong>Salario:</strong> ${{ employee.employee_salary | number }}
+            </mat-list-item>
+            <mat-list-item>
+                <strong>Salario Anual:</strong> ${{ employee.employeeAnnualSalary | number }}
+            </mat-list-item>
+        </mat-list>
+
+        <!-- Imagen -->
+        <div *ngIf="employee.profile_image" class="text-center mt-3">
+            <img [src]="employee.profile_image" alt="Imagen de perfil" class="mat-elevation-z2"
+                style="max-width: 200px; border-radius: 8px;" />
+        </div>
+
+    </mat-card>
+</ng-container>
